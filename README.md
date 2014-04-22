@@ -1,1 +1,1 @@
-I have nothink to say :)
+I have nothing to say :)
