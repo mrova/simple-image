@@ -60,11 +60,7 @@ class ImageService implements ServiceLocatorAwareInterface
 				return false;
 			}
 
-			try {
-				$thumb = new PHPThumb($orgImagePath, $options, $plugins);
-			} catch (\Exception $exc) {
-				throw new Exception\RuntimeException($exc->getMessage(), $exc->getCode(), $exc);
-			}
+			$thumb = new PHPThumb($orgImagePath, $options, $plugins);
 
 			// zmieniamy rozmiar
 			$thumb->$method($width, $height);
