@@ -1,0 +1,27 @@
+{
+	"name": "mrova/simple-image",
+	"description": "Frontend image generator",
+	"type": "library",
+	"license": "MIT",
+	"keywords": [
+		"zf2",
+		"module"
+	],
+	"homepage": "https://github.com/mrova/simple-image",
+	"authors": [
+		{
+			"name": "Michal Mrowiec",
+			"email": "michal.mrowiec@simplesoft.pl"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"suggest": {
+	},
+	"autoload": {
+		"psr-4": {
+			"SimpleImage\\": "src/"
+		}
+	}
+}
