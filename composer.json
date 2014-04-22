@@ -1,14 +1,19 @@
 {
-    "name": "zendframework/skeleton-application",
-    "description": "Skeleton Application for ZF2",
-    "license": "BSD-3-Clause",
-    "keywords": [
-        "framework",
-        "zf2"
-    ],
-    "homepage": "http://framework.zend.com/",
-    "require": {
-        "php": ">=5.3.3",
-        "zendframework/zendframework": "2.3.*"
-    }
+	"name": "mrova/simple-image",
+	"description": "Frontend image manipulation.",
+	"license": "BSD-3-Clause",
+	"keywords": [
+		"image",
+	],
+	"homepage": "http://simplesoft.pl",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git://github.com/webino/WebinoImageThumb.git"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3",
+		"webino/webino-image-thumb" : "dev-master"
+	}
 }
