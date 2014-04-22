@@ -1,9 +1,9 @@
 <?php
 /**
- * Webino (https://github.com/webino/)
+ * SimpleSoft (http://simplesoft.pl)
  *
- * @link      https://github.com/webino/SimpleImage/ for the canonical source repository
- * @copyright Copyright (c) 2013 Webino, s. r. o. (http://webino.sk/)
+ * @link      https://github.com/mrova/simple-image
+ * @copyright Copyright (c) 2014 SimpleSoft (http://simplesoft.pl)
  * @license   New BSD License
  */
 

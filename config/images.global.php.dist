@@ -1,13 +1,20 @@
 <?php
+/**
+ * SimpleSoft (http://simplesoft.pl)
+ *
+ * @link      https://github.com/mrova/simple-image
+ * @copyright Copyright (c) 2014 SimpleSoft (http://simplesoft.pl)
+ * @license   New BSD License
+ */
 
 $settings = array(
-	// Ścieżka do projektu
+	// Project path
 	'_absolutePath' => '/var/www/project/public/',
 
-	// Ścieżka do ktalogu z obrazkami
+	// Relative path to directory with generated images
 	'_localPath' => 'i/',
 
-	// Ścieżka do ktalogu ze zdjęciami oryginalnymi wstawianymi w CRM
+	// Absolute path to directory with oryginal images
 	'_orgPath' => '/var/www/simple/data/uploads/',
 
 	// Content Delivery Network
