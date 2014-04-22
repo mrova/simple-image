@@ -1,0 +1,33 @@
+{
+	"name": "mrova/simple-image",
+	"description": "Image",
+	"type": "library",
+	"keywords": [
+		"simplesoft", "image", "thumb", "zf2", "zend", "framework"
+	],
+	"homepage": "https://github.com/mrova/simple-image",
+	"license": "New BSD License",
+	"authors": [
+		{
+			"name": "Michal Mrowiec",
+			"email": "michal.mrowiec@simplesoft.pl",
+			"homepage": "http://www.simplesoft.pl",
+			"role": "Developer"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.3.3",
+		"masterexploder/PHPThumb": "2.*"
+	},
+	"suggest": {
+		"zendframework/zend-modulemanager": "To use it as Zend Framework module"
+	},
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-0": {
+			"SimpleImage": "src/"
+		}
+	}
+}
