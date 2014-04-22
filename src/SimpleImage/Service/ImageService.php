@@ -55,7 +55,7 @@ class ImageService implements ServiceLocatorAwareInterface
 			$orgImagePath = $this->_orgPath . $hash;
 
 			// if oryginal image does not exists
-			if (!empty($hash) && !file_exists($orgImagePath)) {
+			if (empty($hash) || !file_exists($orgImagePath)) {
 				#TODO: send email to administrator
 				return false;
 			}
