@@ -24,28 +24,21 @@ class Module implements
 	ServiceProviderInterface
 {
 
-	/**
-	 * @return array
-	 */
 	public function getAutoloaderConfig()
 	{
 		return array(
-			'Zend\Loader\ClassMapAutoloader' => array(
-				__DIR__ . '/autoload_classmap.php',
-			),
-			'Zend\Loader\StandardAutoloader' => array(
-				'namespaces' => array(
-			// if we're in a namespace deeper than one level we need to fix the \ in the path
-					__NAMESPACE__ => __DIR__ . '/src/' . str_replace('\\', '/' , __NAMESPACE__),
+				'Zend\Loader\ClassMapAutoloader' => array(
+						__DIR__ . '/autoload_classmap.php',
 				),
-			),
+				'Zend\Loader\StandardAutoloader' => array(
+						'namespaces' => array(
+								__NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
+						),
+				),
 		);
 	}
 
-	/**
-	 * @return array
-	 */
-	public function getConfig()
+	public function getConfig($env = null)
 	{
 		return include __DIR__ . '/config/module.config.php';
 	}
@@ -53,17 +46,17 @@ class Module implements
 	/**
 	 * @return array
 	 */
-	public function getViewHelperConfig()
-	{
-		return array(
-			'factories' => array(
-				'image' => function ($sm) {
-					$locator = $sm->getServiceLocator();
-					$viewHelper = new View\Helper\Image;
-					return $viewHelper;
-				}
-			),
-		);
+// 	public function getViewHelperConfig()
+// 	{
+// 		return array(
+// 			'factories' => array(
+// 				'image' => function ($sm) {
+// 					$locator = $sm->getServiceLocator();
+// 					$viewHelper = new View\Helper\Image;
+// 					return $viewHelper;
+// 				}
+// 			),
+// 		);
 
-	}
+// 	}
 }

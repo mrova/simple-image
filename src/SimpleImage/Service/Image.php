@@ -9,8 +9,8 @@
 
 namespace SimpleImage\Service;
 
-use Zend\ServiceManager\ServiceManager;
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
 use PHPThumb\Plugins;
 use PHPThumb\GD as PHPThumb;
 
@@ -61,5 +61,27 @@ class Image implements ServiceLocatorAwareInterface
 	public function test()
 	{
 		echo 'I am service!';die;
+	}
+
+
+	/**
+	 * Set service locator
+	 *
+	 * @param ServiceLocatorInterface $serviceLocator
+	 */
+	public function setServiceLocator(ServiceLocatorInterface $serviceLocator)
+	{
+		$this->serviceLocator = $serviceLocator;
+		return $this;
+	}
+
+	/**
+	 * Get service locator
+	 *
+	 * @return ServiceLocatorInterface
+	 */
+	public function getServiceLocator()
+	{
+		return $this->serviceLocator;
 	}
 }
