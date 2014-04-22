@@ -3,7 +3,7 @@
 	"description": "Frontend image manipulation.",
 	"license": "BSD-3-Clause",
 	"keywords": [
-		"image",
+		"image"
 	],
 	"homepage": "http://simplesoft.pl",
 	"repositories": [
