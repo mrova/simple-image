@@ -7,10 +7,10 @@
  * @license   New BSD License
  */
 
-namespace SimpleImage\Service
+namespace SimpleImage\Service;
 
-use Zend\ServiceManager\ServiceManagerAwareInterface;
 use Zend\ServiceManager\ServiceManager;
+use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use PHPThumb\Plugins;
 use PHPThumb\GD as PHPThumb;
 

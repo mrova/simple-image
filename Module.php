@@ -23,13 +23,6 @@ class Module implements
 	ConfigProviderInterface,
 	ServiceProviderInterface
 {
-	/**
-	 * @return array
-	 */
-	public function getConfig($env = null)
-	{
-		return include __DIR__ . '/config/module.config.php';
-	}
 
 	/**
 	 * @return array
@@ -42,10 +35,19 @@ class Module implements
 			),
 			'Zend\Loader\StandardAutoloader' => array(
 				'namespaces' => array(
-					__NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
+			// if we're in a namespace deeper than one level we need to fix the \ in the path
+					__NAMESPACE__ => __DIR__ . '/src/' . str_replace('\\', '/' , __NAMESPACE__),
 				),
 			),
 		);
+	}
+
+	/**
+	 * @return array
+	 */
+	public function getConfig()
+	{
+		return include __DIR__ . '/config/module.config.php';
 	}
 
 	/**

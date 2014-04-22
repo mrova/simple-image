@@ -11,16 +11,9 @@
  * Do not write your custom settings into this file
  */
 return array(
-    'di' => array(
-        'definition' => array(
-            'compiler' => array(
-                __DIR__ . '/../data/di/definition.php',
-            ),
-        ),
-        'instance' => array(
-            'alias' => array(
-               'SimpleImage' => 'SimpleImage\SimpleImage',
-           ),
-        ),
-    ),
+	'view_manager' => array(
+		'template_path_stack' => array(
+			'SimpleImage' => __DIR__ . '/../view',
+		),
+	)
 );
