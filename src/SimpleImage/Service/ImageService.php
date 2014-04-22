@@ -3,6 +3,8 @@ namespace SimpleImage\Service;
 
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
+use PHPThumb\Plugins;
+use PHPThumb\GD as PHPThumb;
 
 class ImageService implements ServiceLocatorAwareInterface
 {
