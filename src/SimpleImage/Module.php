@@ -59,7 +59,9 @@ class Module implements
 				'factories' => [
 						'image' => function ($sm) {
 							$locator = $sm->getServiceLocator();
+							$imageService = $locator->get('SimpleImage\ImageService');
 							$viewHelper = new View\Helper\Image;
+							$viewHelper->setImageService($imageService);
 							return $viewHelper;
 						}
 				],
