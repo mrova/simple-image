@@ -6,6 +6,14 @@
 		"image"
 	],
 	"homepage": "http://simplesoft.pl",
+	"authors": [
+		{
+			"name": "Michal Mrowiec",
+			"email": "michal.mrowiec@simplesoft.pl",
+			"homepage": "http://www.simplesoft.pl",
+			"role": "Developer"
+		}
+	],
 	"repositories": [
 		{
 			"type": "vcs",
@@ -15,5 +23,10 @@
 	"require": {
 		"php": ">=5.3.3",
 		"webino/webino-image-thumb" : "dev-master"
+	},
+	"autoload": {
+		"psr-0": {
+			"Image": "src/"
+		}
 	}
 }
