@@ -16,7 +16,7 @@ class ImageService implements ServiceLocatorAwareInterface
 	 *
 	 * @var string
 	 */
-	private $_absolutePath = '/var/www/tt/public/';
+	private $_absolutePath = '/path/to/project/';
 
 	/**
 	 * Relative path to directory with generated images
@@ -43,7 +43,7 @@ class ImageService implements ServiceLocatorAwareInterface
 	{
 		$this->_init();
 
-		$filename = $this->_localPath . $name . '_' . $width . 'x' . $height . '_' . $id .'.jpg';
+		$filename = $name . '_' . $width . 'x' . $height . '_' . $id .'.jpg';
 		$localfilename = $this->_localPath . $filename;
 
 		// generate image if not exists

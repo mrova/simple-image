@@ -1,0 +1,22 @@
+<?php
+
+$settings = array(
+	// Ścieżka do projektu
+	'_absolutePath' => '/var/www/project/public/',
+
+	// Ścieżka do ktalogu z obrazkami
+	'_localPath' => 'i/',
+
+	// Ścieżka do ktalogu ze zdjęciami oryginalnymi wstawianymi w CRM
+	'_orgPath' => '/var/www/simple/data/uploads/',
+
+	// Content Delivery Network
+	'_cdn' => 'http://example.com/'
+);
+
+/**
+ * You do not need to edit below this line
+ */
+return array(
+	'Images' => $settings
+);
