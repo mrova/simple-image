@@ -49,4 +49,21 @@ class Module implements
 			],
 		];
 	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	public function getViewHelperConfig()
+	{
+		return [
+				'factories' => [
+						'image' => function ($sm) {
+							$locator = $sm->getServiceLocator();
+							$viewHelper = new View\Helper\Image;
+							return $viewHelper;
+						}
+				],
+		];
+
+	}
 }

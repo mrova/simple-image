@@ -11,17 +11,20 @@
 	"authors": [
 		{
 			"name": "Michal Mrowiec",
-			"email": "michal.mrowiec@simplesoft.pl"
+			"email": "michal.mrowiec@simplesoft.pl",
+			"homepage": "http://www.bacinsky.sk/",
+			"role": "Developer"
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+		"php": ">=5.3.3",
+		"masterexploder/PHPThumb": "2.*"
 	},
 	"suggest": {
 	},
 	"autoload": {
-		"psr-4": {
-			"SimpleImage\\": "src/"
+		"psr-0": {
+			"SimpleImage": "src/"
 		}
 	}
 }
