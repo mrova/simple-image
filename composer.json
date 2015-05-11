@@ -24,7 +24,7 @@
     	],
 	"require": {
 		"php": ">=5.3.3",
-		"masterexploder/PHPThumb": "2.*"
+		"mrova/PHPThumb": "2.*"
 	},
 	"suggest": {
 	},
