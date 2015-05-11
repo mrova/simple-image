@@ -16,6 +16,12 @@
 			"role": "Developer"
 		}
 	],
+	"repositories": [
+        	{
+            		"type": "vcs",
+            		"url": "git://github.com/mrova/PHPThumb.git"
+        	}
+    	],
 	"require": {
 		"php": ">=5.3.3",
 		"masterexploder/PHPThumb": "2.*"
